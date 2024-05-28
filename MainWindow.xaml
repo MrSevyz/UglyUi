@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp6"
         mc:Ignorable="d"
-        Title="MainWindow" Height="540" Width="1250" WindowState="Maximized">
+        Title="MainWindow" Height="715" Width="1250" WindowState="Maximized">
 	<Grid>
 		<TabControl x:Name="tabctr">
 			<TabItem x:Name="tab1" Header="Main">
@@ -14,12 +14,25 @@
 					<PasswordBox HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="202"/>
 					<Button x:Name="btn2" Content="Connect-MgGraph" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" Width="202"/>
 					<Button x:Name="btn3" Content="Connect-ExchangeOnline" HorizontalAlignment="Left" Margin="10,322,0,0" VerticalAlignment="Top" Width="202"/>
-					<ComboBox HorizontalAlignment="Left" Margin="245,277,0,0" VerticalAlignment="Top" Width="174"/>
+					<ComboBox HorizontalAlignment="Left" Margin="245,277,0,0" VerticalAlignment="Top" Width="202"/>
 					<StackPanel HorizontalAlignment="Left" Height="167" Margin="0,239,0,0" VerticalAlignment="Top" Width="390"/>
 					<TextBox x:Name="tbx4" HorizontalAlignment="Left" Height="165" Margin="10,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="409"/>
+					<Label x:Name="lbl1" Content="CREATE SECRET (PWSH VAULT)" HorizontalAlignment="Left" Margin="752,29,0,0" VerticalAlignment="Top" Width="205"/>
+					<TextBox x:Name="tbxSecretName" HorizontalAlignment="Left" Margin="762,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+					<TextBox x:Name="tbxTenantId" HorizontalAlignment="Left" Margin="762,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+					<TextBox x:Name="tbxTenantName" HorizontalAlignment="Left" Margin="762,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+					<TextBox x:Name="tbxAppId" HorizontalAlignment="Left" Margin="762,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+					<TextBox x:Name="tbxCertThumb" HorizontalAlignment="Left" Margin="762,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+					<PasswordBox x:Name="pboxAppSecret" HorizontalAlignment="Left" Margin="762,281,0,0" VerticalAlignment="Top" Width="280"/>
+					<Label x:Name="lbl1_Copia" Content="SecretName" HorizontalAlignment="Left" Margin="637,79,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.154,0.573"/>
+					<Label x:Name="lbl1_Copia1" Content="TenantId" HorizontalAlignment="Left" Margin="650,115,0,0" VerticalAlignment="Top" Width="64"/>
+					<Label x:Name="lbl1_Copia2" Content="TenantHostname" HorizontalAlignment="Left" Margin="622,153,0,0" VerticalAlignment="Top" Width="120"/>
+					<Label x:Name="lbl1_Copia3" Content="AppId" HorizontalAlignment="Left" Margin="650,192,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
+					<Label x:Name="lbl1_Copia4" Content="CertThumb" HorizontalAlignment="Left" Margin="637,235,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.154,0.573"/>
+					<Label x:Name="lbl1_Copia5" Content="AppSecret" HorizontalAlignment="Left" Margin="650,277,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
 				</Grid>
 			</TabItem>
-			<TabItem x:Name="tab2" HorizontalAlignment="Center" Height="20" Header="Tab2" VerticalAlignment="Center" Width="54">
+			<TabItem x:Name="tab2" HorizontalAlignment="Center" Height="20" Header="SecretStore" VerticalAlignment="Center" Width="54">
 				<Grid Background="#FFE5E5E5"/>
 			</TabItem>
 			<TabItem x:Name="tab3" HorizontalAlignment="Center" Height="20" Header="Tab3" VerticalAlignment="Center" Width="54">
