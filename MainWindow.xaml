@@ -6,70 +6,80 @@
         xmlns:local="clr-namespace:WpfApp6"
         mc:Ignorable="d"
         Title="MainWindow" Height="715" Width="1250" WindowState="Maximized">
-	<Grid>
-		<TabControl x:Name="tabctr">
-			<TabItem x:Name="tab1" Header="Main">
-				<Grid Background="#FFE5E5E5">
-					<Button x:Name="btn1" Content="Unlock-SecretStore" HorizontalAlignment="Left" Margin="217,44,0,0" VerticalAlignment="Top" Width="202"/>
-					<PasswordBox HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="202"/>
-					<Button x:Name="btn2" Content="Connect-MgGraph" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" Width="202"/>
-					<Button x:Name="btn3" Content="Connect-ExchangeOnline" HorizontalAlignment="Left" Margin="10,322,0,0" VerticalAlignment="Top" Width="202"/>
-					<ComboBox HorizontalAlignment="Left" Margin="245,277,0,0" VerticalAlignment="Top" Width="202"/>
-					<StackPanel HorizontalAlignment="Left" Height="167" Margin="0,239,0,0" VerticalAlignment="Top" Width="390"/>
-					<TextBox x:Name="tbx4" HorizontalAlignment="Left" Height="165" Margin="10,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="409"/>
-					<Label x:Name="lbl1" Content="CREATE SECRET (PWSH VAULT)" HorizontalAlignment="Left" Margin="752,29,0,0" VerticalAlignment="Top" Width="205"/>
-					<TextBox x:Name="tbxSecretName" HorizontalAlignment="Left" Margin="762,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-					<TextBox x:Name="tbxTenantId" HorizontalAlignment="Left" Margin="762,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-					<TextBox x:Name="tbxTenantName" HorizontalAlignment="Left" Margin="762,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-					<TextBox x:Name="tbxAppId" HorizontalAlignment="Left" Margin="762,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-					<TextBox x:Name="tbxCertThumb" HorizontalAlignment="Left" Margin="762,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-					<PasswordBox x:Name="pboxAppSecret" HorizontalAlignment="Left" Margin="762,281,0,0" VerticalAlignment="Top" Width="280"/>
-					<Label x:Name="lbl1_Copia" Content="SecretName" HorizontalAlignment="Left" Margin="637,79,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.154,0.573"/>
-					<Label x:Name="lbl1_Copia1" Content="TenantId" HorizontalAlignment="Left" Margin="650,115,0,0" VerticalAlignment="Top" Width="64"/>
-					<Label x:Name="lbl1_Copia2" Content="TenantHostname" HorizontalAlignment="Left" Margin="622,153,0,0" VerticalAlignment="Top" Width="120"/>
-					<Label x:Name="lbl1_Copia3" Content="AppId" HorizontalAlignment="Left" Margin="650,192,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
-					<Label x:Name="lbl1_Copia4" Content="CertThumb" HorizontalAlignment="Left" Margin="637,235,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.154,0.573"/>
-					<Label x:Name="lbl1_Copia5" Content="AppSecret" HorizontalAlignment="Left" Margin="650,277,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
-				</Grid>
-			</TabItem>
-			<TabItem x:Name="tab2" HorizontalAlignment="Center" Height="20" Header="SecretStore" VerticalAlignment="Center" Width="54">
-				<Grid Background="#FFE5E5E5"/>
-			</TabItem>
-			<TabItem x:Name="tab3" HorizontalAlignment="Center" Height="20" Header="Tab3" VerticalAlignment="Center" Width="54">
-				<Grid Background="#FFE5E5E5"/>
-			</TabItem>
-			<TabItem x:Name="tab4" HorizontalAlignment="Center" Height="20" Header="Tab4" VerticalAlignment="Bottom" Width="54" Margin="0,0,0,1">
-				<Grid Background="#FFE5E5E5">
-					<Button x:Name="btn4" Content="Button" HorizontalAlignment="Left" Margin="10,309,0,0" VerticalAlignment="Top" Width="172"/>
-					<TextBox x:Name="txb1" HorizontalAlignment="Left" Margin="10,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
-					<CheckBox x:Name="cbx1" Content="-verbose" HorizontalAlignment="Left" Margin="232,61,0,0" VerticalAlignment="Top" Height="20" Width="90"/>
-					<CheckBox x:Name="cbx2" Content="-InformationLevel" HorizontalAlignment="Left" Margin="333,61,0,0" VerticalAlignment="Top" Height="20" Width="138"/>
-					<CheckBox x:Name="cbx3" Content="-ConstrainInterface " HorizontalAlignment="Left" Margin="622,61,0,0" VerticalAlignment="Top" Height="20" Width="172"/>
-					<CheckBox x:Name="cbx4" Content="-DiagnoseRouting" HorizontalAlignment="Left" Margin="912,61,0,0" VerticalAlignment="Top" Height="20" Width="172"/>
-					<CheckBox x:Name="cbx5" Content="-TraceRoute" HorizontalAlignment="Left" Margin="1050,60,0,0" VerticalAlignment="Top" Height="20" Width="172"/>
-					<CheckBox x:Name="cbx6" Content="-Port" HorizontalAlignment="Left" Margin="232,95,0,0" VerticalAlignment="Top" Height="20" Width="60"/>
-					<Label Content="ip / url" HorizontalAlignment="Left" Margin="25,35,0,0" VerticalAlignment="Top" Width="142"/>
-					<ComboBox x:Name="cbox1" HorizontalAlignment="Left" Margin="471,59,0,0" VerticalAlignment="Top" Width="120"/>
-					<Grid HorizontalAlignment="Left" Height="90" Margin="10,34,0,0" VerticalAlignment="Top" Width="922"/>
-					<ComboBox x:Name="cbox2" HorizontalAlignment="Left" Margin="767,57,0,0" VerticalAlignment="Top" Width="120"/>
-					<TextBox x:Name="tbx1" HorizontalAlignment="Left" Margin="297,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-					<TextBlock HorizontalAlignment="Left" Height="262" Margin="322,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="505"/>
-				</Grid>
-			</TabItem>
-			<TabItem x:Name="tab5" HorizontalAlignment="Center" Height="20" Header="tab5" VerticalAlignment="Center" Width="54">
-				<Grid Background="#FFE5E5E5">
-					<TextBox x:Name="tbx2" HorizontalAlignment="Left" Height="25" Margin="87,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
-					<TextBox x:Name="tbx3" HorizontalAlignment="Left" Height="25" Margin="87,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
-					<Label x:Name="lbl2" Content="userid" HorizontalAlignment="Left" Margin="154,3,0,0" VerticalAlignment="Top" Width="68"/>
-					<Label x:Name="lbl3" Content="folderid" HorizontalAlignment="Left" Margin="154,53,0,0" VerticalAlignment="Top" Width="68"/>
-					<Label x:Name="lbl4" Content="userid" HorizontalAlignment="Left" Margin="339,36,0,0" VerticalAlignment="Top" Width="383"/>
-					<Label x:Name="lbl" Content="folderid" HorizontalAlignment="Left" Margin="339,79,0,0" VerticalAlignment="Top" Width="483"/>
-					<Button x:Name="btn5" Content="Set Variables" HorizontalAlignment="Left" Margin="87,144,0,0" VerticalAlignment="Top" Width="210"/>
-					<Button x:Name="btn6" Content="delete mails" HorizontalAlignment="Left" Margin="87,188,0,0" VerticalAlignment="Top" Width="210"/>
-					<ProgressBar x:Name="pbar1" HorizontalAlignment="Left" Height="10" Margin="87,254,0,0" VerticalAlignment="Top" Width="250"/>
-				</Grid>
-			</TabItem>
-		</TabControl>
+    <Grid>
+        <TabControl x:Name="tabctr">
+            <TabItem x:Name="tab1" Header="Main">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btn1" Content="Unlock-SecretStore" HorizontalAlignment="Left" Margin="217,44,0,0" VerticalAlignment="Top" Width="202"/>
+                    <PasswordBox HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="202"/>
+                    <Button x:Name="btn2" Content="Connect-MgGraph" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" Width="202"/>
+                    <Button x:Name="btn3" Content="Connect-ExchangeOnline" HorizontalAlignment="Left" Margin="10,322,0,0" VerticalAlignment="Top" Width="202"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="245,277,0,0" VerticalAlignment="Top" Width="202"/>
+                    <StackPanel HorizontalAlignment="Left" Height="167" Margin="0,239,0,0" VerticalAlignment="Top" Width="390"/>
+                    <TextBox x:Name="tbx4" HorizontalAlignment="Left" Height="165" Margin="10,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="409"/>
+                    <Label x:Name="lbl1" Content="CREATE SECRET (PWSH VAULT)" HorizontalAlignment="Left" Margin="752,29,0,0" VerticalAlignment="Top" Width="205"/>
+                    <TextBox x:Name="tbxSecretName" HorizontalAlignment="Left" Margin="762,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                    <TextBox x:Name="tbxTenantId" HorizontalAlignment="Left" Margin="762,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                    <TextBox x:Name="tbxTenantName" HorizontalAlignment="Left" Margin="762,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                    <TextBox x:Name="tbxAppId" HorizontalAlignment="Left" Margin="762,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                    <TextBox x:Name="tbxCertThumb" HorizontalAlignment="Left" Margin="762,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+                    <PasswordBox x:Name="pboxAppSecret" HorizontalAlignment="Left" Margin="762,281,0,0" VerticalAlignment="Top" Width="280"/>
+                    <Label x:Name="lbl1_Copia" Content="SecretName" HorizontalAlignment="Left" Margin="637,79,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.154,0.573"/>
+                    <Label x:Name="lbl1_Copia1" Content="TenantId" HorizontalAlignment="Left" Margin="650,115,0,0" VerticalAlignment="Top" Width="64"/>
+                    <Label x:Name="lbl1_Copia2" Content="TenantHostname" HorizontalAlignment="Left" Margin="622,153,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lbl1_Copia3" Content="AppId" HorizontalAlignment="Left" Margin="650,192,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
+                    <Label x:Name="lbl1_Copia4" Content="CertThumb" HorizontalAlignment="Left" Margin="637,235,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.154,0.573"/>
+                    <Label x:Name="lbl1_Copia5" Content="AppSecret" HorizontalAlignment="Left" Margin="650,277,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tab2" HorizontalAlignment="Center" Height="20" Header="SecretStore" VerticalAlignment="Center" Width="54">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="tab3" HorizontalAlignment="Center" Height="20" Header="Tab3" VerticalAlignment="Center" Width="54">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="tab4" HorizontalAlignment="Center" Height="20" Header="Tab4" VerticalAlignment="Bottom" Width="54" Margin="0,0,0,1">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btn4" Content="Button" HorizontalAlignment="Left" Margin="10,309,0,0" VerticalAlignment="Top" Width="172"/>
+                    <TextBox x:Name="txb1" HorizontalAlignment="Left" Margin="10,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
+                    <CheckBox x:Name="cbx1" Content="-verbose" HorizontalAlignment="Left" Margin="232,61,0,0" VerticalAlignment="Top" Height="20" Width="90"/>
+                    <CheckBox x:Name="cbx2" Content="-InformationLevel" HorizontalAlignment="Left" Margin="333,61,0,0" VerticalAlignment="Top" Height="20" Width="138"/>
+                    <CheckBox x:Name="cbx3" Content="-ConstrainInterface " HorizontalAlignment="Left" Margin="622,61,0,0" VerticalAlignment="Top" Height="20" Width="172"/>
+                    <CheckBox x:Name="cbx4" Content="-DiagnoseRouting" HorizontalAlignment="Left" Margin="912,61,0,0" VerticalAlignment="Top" Height="20" Width="172"/>
+                    <CheckBox x:Name="cbx5" Content="-TraceRoute" HorizontalAlignment="Left" Margin="1050,60,0,0" VerticalAlignment="Top" Height="20" Width="172"/>
+                    <CheckBox x:Name="cbx6" Content="-Port" HorizontalAlignment="Left" Margin="232,95,0,0" VerticalAlignment="Top" Height="20" Width="60"/>
+                    <Label Content="ip / url" HorizontalAlignment="Left" Margin="25,35,0,0" VerticalAlignment="Top" Width="142"/>
+                    <ComboBox x:Name="cbox1" HorizontalAlignment="Left" Margin="471,59,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Grid HorizontalAlignment="Left" Height="90" Margin="10,34,0,0" VerticalAlignment="Top" Width="922"/>
+                    <ComboBox x:Name="cbox2" HorizontalAlignment="Left" Margin="767,57,0,0" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tbx1" HorizontalAlignment="Left" Margin="297,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBlock HorizontalAlignment="Left" Height="262" Margin="322,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="505"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tab5" HorizontalAlignment="Center" Height="20" Header="tab5" VerticalAlignment="Center" Width="54">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="tbx2" HorizontalAlignment="Left" Height="25" Margin="87,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                    <TextBox x:Name="tbx3" HorizontalAlignment="Left" Height="25" Margin="87,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                    <Label x:Name="lbl2" Content="userid" HorizontalAlignment="Left" Margin="154,3,0,0" VerticalAlignment="Top" Width="68"/>
+                    <Label x:Name="lbl3" Content="folderid" HorizontalAlignment="Left" Margin="154,53,0,0" VerticalAlignment="Top" Width="68"/>
+                    <Label x:Name="lbl4" Content="userid" HorizontalAlignment="Left" Margin="339,36,0,0" VerticalAlignment="Top" Width="383"/>
+                    <Label x:Name="lbl" Content="folderid" HorizontalAlignment="Left" Margin="339,79,0,0" VerticalAlignment="Top" Width="483"/>
+                    <Button x:Name="btn5" Content="Set Variables" HorizontalAlignment="Left" Margin="87,144,0,0" VerticalAlignment="Top" Width="210"/>
+                    <Button x:Name="btn6" Content="delete mails" HorizontalAlignment="Left" Margin="87,188,0,0" VerticalAlignment="Top" Width="210"/>
+                    <ProgressBar x:Name="pbar1" HorizontalAlignment="Left" Height="10" Margin="87,254,0,0" VerticalAlignment="Top" Width="250"/>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="20" Header="TabItem" VerticalAlignment="Center" Width="54">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="tbxTraceroute" HorizontalAlignment="Left" Margin="77,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="TextBox_TextChanged"/>
+                    <Button x:Name="btnTraceroute" Content="Traceroute" HorizontalAlignment="Left" Margin="272,39,0,0" VerticalAlignment="Top" Width="160"/>
+                    <TextBox x:Name="tbxTracerouteResults" HorizontalAlignment="Left" Margin="77,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" Height="535"/>
+                    <Button x:Name="btnPing" Content="Ping" HorizontalAlignment="Left" Margin="272,74,0,0" VerticalAlignment="Top" Width="160"/>
+                    <Button x:Name="btnPort" Content="Check  Port" HorizontalAlignment="Left" Margin="162,74,0,0" VerticalAlignment="Top" Width="85"/>
+                    <TextBox x:Name="tbxPort" HorizontalAlignment="Left" Margin="77,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
-	</Grid>
+    </Grid>
 </Window>
