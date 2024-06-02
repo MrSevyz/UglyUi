@@ -35,8 +35,13 @@
             <TabItem x:Name="tab2" HorizontalAlignment="Center" Height="20" Header="SecretStore" VerticalAlignment="Center" Width="54">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem x:Name="tab3" HorizontalAlignment="Center" Height="20" Header="Tab3" VerticalAlignment="Center" Width="54">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem x:Name="tab3" HorizontalAlignment="Center" Height="20" Header="Whois" VerticalAlignment="Center" Width="54">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txbWhois" HorizontalAlignment="Left" Margin="70,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
+                    <Label x:Name="lblWhois" Content="Ip/domain" HorizontalAlignment="Left" Margin="137,13,0,0" VerticalAlignment="Top" Width="80"/>
+                    <TextBox x:Name="tbxResults" HorizontalAlignment="Left" Margin="67,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="660" Height="460"/>
+                    <Button x:Name="btnWhois" Content="Whois" HorizontalAlignment="Left" Margin="317,47,0,0" VerticalAlignment="Top" Width="145"/>
+                </Grid>
             </TabItem>
             <TabItem x:Name="tab4" HorizontalAlignment="Center" Height="20" Header="Tab4" VerticalAlignment="Bottom" Width="54" Margin="0,0,0,1">
                 <Grid Background="#FFE5E5E5">
