@@ -38,10 +38,14 @@
                     <Label x:Name="lblMxRecords" Content="Hostname" HorizontalAlignment="Left" Margin="77,35,0,0" VerticalAlignment="Top" Width="65"/>
                     <Button x:Name="btnMxRecords" Content="Get Mx Records" HorizontalAlignment="Left" Margin="342,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.126,-0.198" Width="155"/>
                     <TextBox x:Name="txbResultsMxRecords" HorizontalAlignment="Left" Margin="77,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="560" Height="480"/>
-                    <TextBlock x:Name="txbkDMARC" HorizontalAlignment="Left" Margin="717,119,0,0" TextWrapping="Wrap" Text="DMARC" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
-                    <TextBlock x:Name="txbkDKIM" HorizontalAlignment="Left" Margin="717,219,0,0" TextWrapping="Wrap" Text="DKIM" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
-                    <TextBlock x:Name="txbkSPF" HorizontalAlignment="Left" Margin="717,343,0,0" TextWrapping="Wrap" Text="SPF" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
-                    <TextBlock x:Name="txbkMX" HorizontalAlignment="Left" Margin="717,513,0,0" TextWrapping="Wrap" Text="MX" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkDMARC" HorizontalAlignment="Left" Margin="717,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkDKIM" HorizontalAlignment="Left" Margin="717,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkSPF" HorizontalAlignment="Left" Margin="717,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkMX" HorizontalAlignment="Left" Margin="717,513,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkDMARC_Copia" HorizontalAlignment="Left" Margin="657,119,0,0" TextWrapping="Wrap" Text="DMARC" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkDKIM_Copia" HorizontalAlignment="Left" Margin="657,219,0,0" TextWrapping="Wrap" Text="DKIM" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkSPF_Copia" HorizontalAlignment="Left" Margin="657,343,0,0" TextWrapping="Wrap" Text="SPF" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkMX_Copia" HorizontalAlignment="Left" Margin="657,513,0,0" TextWrapping="Wrap" Text="MX" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tab3" HorizontalAlignment="Center" Height="20" Header="Whois" VerticalAlignment="Center" Width="54">
