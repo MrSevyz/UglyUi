@@ -32,8 +32,17 @@
                     <Label x:Name="lbl1_Copia5" Content="AppSecret" HorizontalAlignment="Left" Margin="650,277,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab2" HorizontalAlignment="Center" Height="20" Header="SecretStore" VerticalAlignment="Center" Width="54">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem x:Name="tab2" HorizontalAlignment="Center" Height="20" Header="Mx Records" VerticalAlignment="Center" Width="54">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txbMxRecords" HorizontalAlignment="Left" Margin="147,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+                    <Label x:Name="lblMxRecords" Content="Hostname" HorizontalAlignment="Left" Margin="77,35,0,0" VerticalAlignment="Top" Width="65"/>
+                    <Button x:Name="btnMxRecords" Content="Get Mx Records" HorizontalAlignment="Left" Margin="342,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.126,-0.198" Width="155"/>
+                    <TextBox x:Name="txbResultsMxRecords" HorizontalAlignment="Left" Margin="77,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="560" Height="480"/>
+                    <TextBlock x:Name="txbkDMARC" HorizontalAlignment="Left" Margin="717,119,0,0" TextWrapping="Wrap" Text="DMARC" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkDKIM" HorizontalAlignment="Left" Margin="717,219,0,0" TextWrapping="Wrap" Text="DKIM" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkSPF" HorizontalAlignment="Left" Margin="717,343,0,0" TextWrapping="Wrap" Text="SPF" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <TextBlock x:Name="txbkMX" HorizontalAlignment="Left" Margin="717,513,0,0" TextWrapping="Wrap" Text="MX" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                </Grid>
             </TabItem>
             <TabItem x:Name="tab3" HorizontalAlignment="Center" Height="20" Header="Whois" VerticalAlignment="Center" Width="54">
                 <Grid Background="#FFE5E5E5">
