@@ -30,6 +30,7 @@
                     <Label x:Name="lbl1_Copia3" Content="AppId" HorizontalAlignment="Left" Margin="650,192,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
                     <Label x:Name="lbl1_Copia4" Content="CertThumb" HorizontalAlignment="Left" Margin="637,235,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.154,0.573"/>
                     <Label x:Name="lbl1_Copia5" Content="AppSecret" HorizontalAlignment="Left" Margin="650,277,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.154,0.573"/>
+                    <Label x:Name="lblname" Content="Bianchetto Luca" HorizontalAlignment="Left" Margin="1027,604,0,0" VerticalAlignment="Top" Width="125"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tab2" HorizontalAlignment="Center" Height="20" Header="Mx Records" VerticalAlignment="Center" Width="54">
@@ -46,15 +47,11 @@
                     <TextBlock x:Name="txbkDKIM_Copia" HorizontalAlignment="Left" Margin="657,219,0,0" TextWrapping="Wrap" Text="DKIM" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
                     <TextBlock x:Name="txbkSPF_Copia" HorizontalAlignment="Left" Margin="657,343,0,0" TextWrapping="Wrap" Text="SPF" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
                     <TextBlock x:Name="txbkMX_Copia" HorizontalAlignment="Left" Margin="657,513,0,0" TextWrapping="Wrap" Text="MX" VerticalAlignment="Top" Width="55" MinWidth="50" MinHeight="20"/>
+                    <Label x:Name="lblname_Copia" Content="Bianchetto Luca" HorizontalAlignment="Left" Margin="1027,604,0,0" VerticalAlignment="Top" Width="125"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tab3" HorizontalAlignment="Center" Height="20" Header="Whois" VerticalAlignment="Center" Width="54">
-                <Grid Background="#FFE5E5E5">
-                    <TextBox x:Name="txbWhois" HorizontalAlignment="Left" Margin="70,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
-                    <Label x:Name="lblWhois" Content="Ip/domain" HorizontalAlignment="Left" Margin="137,13,0,0" VerticalAlignment="Top" Width="80"/>
-                    <TextBox x:Name="tbxResults" HorizontalAlignment="Left" Margin="67,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="660" Height="460"/>
-                    <Button x:Name="btnWhois" Content="Whois" HorizontalAlignment="Left" Margin="317,47,0,0" VerticalAlignment="Top" Width="145"/>
-                </Grid>
+                <Label x:Name="lblname_Copia1" Content="Bianchetto Luca" HorizontalAlignment="Left" Margin="1027,0,0,0" VerticalAlignment="Top" Width="125"/>
             </TabItem>
             <TabItem x:Name="tab4" HorizontalAlignment="Center" Height="20" Header="Tab4" VerticalAlignment="Bottom" Width="54" Margin="0,0,0,1">
                 <Grid Background="#FFE5E5E5">
@@ -72,6 +69,7 @@
                     <ComboBox x:Name="cbox2" HorizontalAlignment="Left" Margin="767,57,0,0" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="tbx1" HorizontalAlignment="Left" Margin="297,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <TextBlock HorizontalAlignment="Left" Height="262" Margin="322,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="505"/>
+                    <Label x:Name="lblname_Copia2" Content="Bianchetto Luca" HorizontalAlignment="Left" Margin="1027,604,0,0" VerticalAlignment="Top" Width="125"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tab5" HorizontalAlignment="Center" Height="20" Header="tab5" VerticalAlignment="Center" Width="54">
@@ -85,6 +83,7 @@
                     <Button x:Name="btn5" Content="Set Variables" HorizontalAlignment="Left" Margin="87,144,0,0" VerticalAlignment="Top" Width="210"/>
                     <Button x:Name="btn6" Content="delete mails" HorizontalAlignment="Left" Margin="87,188,0,0" VerticalAlignment="Top" Width="210"/>
                     <ProgressBar x:Name="pbar1" HorizontalAlignment="Left" Height="10" Margin="87,254,0,0" VerticalAlignment="Top" Width="250"/>
+                    <Label x:Name="lblname_Copia3" Content="Bianchetto Luca" HorizontalAlignment="Left" Margin="1027,604,0,0" VerticalAlignment="Top" Width="125"/>
                 </Grid>
             </TabItem>
             <TabItem HorizontalAlignment="Center" Height="20" Header="TabItem" VerticalAlignment="Center" Width="54">
@@ -95,6 +94,7 @@
                     <Button x:Name="btnPing" Content="Ping" HorizontalAlignment="Left" Margin="272,74,0,0" VerticalAlignment="Top" Width="160"/>
                     <Button x:Name="btnPort" Content="Check  Port" HorizontalAlignment="Left" Margin="162,74,0,0" VerticalAlignment="Top" Width="85"/>
                     <TextBox x:Name="tbxPort" HorizontalAlignment="Left" Margin="77,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+                    <Label x:Name="lblname_Copia4" Content="Bianchetto Luca" HorizontalAlignment="Left" Margin="1027,604,0,0" VerticalAlignment="Top" Width="125"/>
                 </Grid>
             </TabItem>
         </TabControl>
